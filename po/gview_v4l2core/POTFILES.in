@@ -1,0 +1,3 @@
+#gview_v4l2core lib
+gview_v4l2core/v4l2_controls.c
+gview_v4l2core/v4l2_xu_ctrls.c

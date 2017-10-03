@@ -1,0 +1,481 @@
+# Basque translation for guvcview
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the guvcview package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: guvcview\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-02-25 05:37+0000\n"
+"Last-Translator: Pablo Zubiaurre <pablo.zubiaurre@gmail.com>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "Distira"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "Kontrastea"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "Ñabardura"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "Asetasuna"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "Garbitasuna"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "Gamma"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "Foku automatikoa"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "Eskuzko modua"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "Modu automatikoa"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr "Obturadore lehentasun modua"
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr "Beltz-maila"
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr "Zuri-balantzea,automatikoa"
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr "Zuri-balantzea egin"
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr "Gorri balantzea"
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr "Urdin balantzea"
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr "Esposizioa"
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr "Irabazia, Automatikoa"
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "Irabazia"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr "Irauli horizontalki"
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr "Irauli bertikalki"
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr ""
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr ""
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr ""
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63
+msgid "Off"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64
+msgid "On"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65
+msgid "Blinking"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66
+#, fuzzy
+msgid "Auto"
+msgstr "Modu automatikoa"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr ""
+
+#~ msgid "Stop Video (V)"
+#~ msgstr "Bideoa gelditu (V)"
+
+#~ msgid "Cap. Video (V)"
+#~ msgstr "Kaptura (V):"
+
+#, fuzzy
+#~ msgid "_Cancel"
+#~ msgstr "utzi"
+
+#, fuzzy
+#~ msgid "Guvcview"
+#~ msgstr "Gucview oharra:"
+
+#~ msgid "Cap. Image (I)"
+#~ msgstr "Kaptura (I):"
+
+#~ msgid "Image Controls"
+#~ msgstr "Irudi kontrolak"
+
+#, fuzzy
+#~ msgid "Video Controls"
+#~ msgstr "GUVCViewer kontrolak"
+
+#, fuzzy
+#~ msgid "Audio Controls"
+#~ msgstr "Irudi kontrolak"
+
+#~ msgid "start new"
+#~ msgstr "Berria hasi"
+
+#~ msgid "restart"
+#~ msgstr "berrabiarazi"
+
+#~ msgid "new"
+#~ msgstr "berria"
+
+#~ msgid "cancel"
+#~ msgstr "utzi"
+
+#~ msgid ""
+#~ "launch new process or restart?.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "prozesu berria hasi edo berrabiarazi?\n"
+#~ "\n"
+
+#~ msgid "Left"
+#~ msgstr "Ezkerrera"
+
+#~ msgid "Right"
+#~ msgstr "Eskuina"
+
+#~ msgid "Down"
+#~ msgstr "Behera"
+
+#~ msgid "Up"
+#~ msgstr "Gora"
+
+#~ msgid "set Focus"
+#~ msgstr "Fokatu"
+
+#, fuzzy
+#~ msgid ""
+#~ "Guvcview version %s\n"
+#~ "\n"
+#~ msgstr "Gucview oharra:"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Ez da posible gailua zabaltzea"
+
+#~ msgid ""
+#~ "Please make sure the camera is connected\n"
+#~ "and that the correct driver is installed."
+#~ msgstr ""
+#~ "Ziurtatu kamera konektatua\n"
+#~ "eta driver-a instalatuta dagoela"
+
+#~ msgid ""
+#~ "Guvcview:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Gucview:\n"
+#~ "\n"
+#~ "UVC luzapenaren kontrolak"
+
+#~ msgid "Extension controls were added to the UVC driver"
+#~ msgstr "Luzapen kontrolak UVC kontroladoreari gehitu zaizkio"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "UVC luzapenaren kontrolak"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Can't set a valid video stream for guvcview"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Ezin izan da bideo-korrontea ezarri"
+
+#~ msgid ""
+#~ "Make sure your device driver is v4l2 compliant\n"
+#~ "and that it is properly installed."
+#~ msgstr ""
+#~ "Mesedez,egiaztatu v4I2 kontrolatzailea duzula\n"
+#~ "eta instalatuta dagoela."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to start with minimum setup"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Ezin izan da konfigurazio minimoarekin abiarazi"
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "Mesedez, kamera berriro konektatu"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Couldn't query device capabilities"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Ezin izan da gailua ireki"
+
+#~ msgid "Make sure the device driver supports v4l2."
+#~ msgstr "Ziurtatu gailuaren kontrolatzaileak v4I2 eusten duela"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Read method error"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Irakurketametodoaren errorea"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "Gucview errorea:\n"
+#~ "\n"
+#~ "Ezin izan dira bufferrak esleitu"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "Mesedez saiatu sistema berrabiarazten."
+
+#~ msgid "Number of Pictures to capture"
+#~ msgstr "Kapturatu beharreko argazki kopurua"
+
+#~ msgid "Load Profile at start"
+#~ msgstr "Profila kargatu hastean"
+
+#~ msgid "- local options"
+#~ msgstr "-aukera lokalak"
+
+#~ msgid "Not enough free space left on disk"
+#~ msgstr "Ez dago leku nahikorik diskoan"

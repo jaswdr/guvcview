@@ -1,0 +1,770 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: guvcview\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-02-25 05:36+0000\n"
+"Last-Translator: kentxchang <Unknown>\n"
+"Language-Team: none <kentxchang@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+"X-Poedit-Country: TAIWAN\n"
+"X-Poedit-Language: Chinese\n"
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr "使用者設定"
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "亮度"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "對比"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "色調"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "飽和度"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "銳利度"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "伽瑪值"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr "背光補償"
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr "視訊頻率"
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr "自動色調"
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "自動對焦"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "手動模式"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "自動模式"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr "快門優先模式"
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr "光圈優先模式"
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr "黑色等級"
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr "自動白平衡"
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr "設置白平衡"
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr "紅平衡"
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr "藍平衡"
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr "曝光度"
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr "自動增益"
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "增益"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr "水平翻轉"
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr "垂直翻轉"
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr "水平中心"
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr "垂直中心"
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr "濃度AGC"
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr "顏色 killer"
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr "色彩效果"
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr "攝影機設定"
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr "自動曝光"
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr "絕對曝光時間"
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr "曝光，動態碼率"
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr "筆,相對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr "傾斜,相對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr "筆,重設"
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr "傾斜,重設"
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr "筆,絕對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr "對焦,絕對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr "對焦,相對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr "對焦,自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr "變焦,絕對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr "變焦,相對的"
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr "變焦,連續的"
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr "隱私"
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr "曝光，自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr "曝光，自動優先"
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr "曝光（絕對）"
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr "白平衡溫度，自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr "白平衡溫度"
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr "白平衡元件,自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr "白平衡藍元件"
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr "白平衡紅元件"
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr "對焦"
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr "對焦(絕對的)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63
+msgid "Off"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64
+msgid "On"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65
+msgid "Blinking"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66
+#, fuzzy
+msgid "Auto"
+msgstr "自動模式"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr "Pan (相對的)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr "傾斜(相對的)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr "Pan 重設"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr "傾斜重設"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr "對焦(絕對值)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr "LED1模式"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr "LED1頻率"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr "停用影像處理"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr "Raw bits per pixel"
+
+#, fuzzy
+#~ msgid "Raw camera input"
+#~ msgstr "攝影機輸出:"
+
+#~ msgid "MJPG - compressed"
+#~ msgstr "MJPG - compressed"
+
+#~ msgid "MPEG video 1"
+#~ msgstr "MPEG video 1"
+
+#~ msgid "FLV1 - flash video 1"
+#~ msgstr "FLV1 - flash video 1"
+
+#~ msgid "WMV1 - win. med. video 7"
+#~ msgstr "WMV1 - win. med. video 7"
+
+#~ msgid "MPG2 - MPG2 format"
+#~ msgstr "MPG2 - MPG2 format"
+
+#~ msgid "MS MP4 V3"
+#~ msgstr "MS MP4 V3"
+
+#~ msgid "MPEG4-ASP"
+#~ msgstr "MPEG4-ASP"
+
+#~ msgid "MPEG4-AVC (H264)"
+#~ msgstr "MPEG4-AVC (H264)"
+
+#~ msgid "Audio API:"
+#~ msgstr "音頻API:"
+
+#~ msgid "PORTAUDIO"
+#~ msgstr "PORTAUDIO"
+
+#~ msgid "PULSEAUDIO"
+#~ msgstr "PULSEAUDIO"
+
+#~ msgid "Input Device:"
+#~ msgstr "輸入設備:"
+
+#~ msgid "Sample Rate:"
+#~ msgstr "範例碼率:"
+
+#~ msgid "Dev. Default"
+#~ msgstr "Dev. Default"
+
+#~ msgid "Channels:"
+#~ msgstr "聲道:"
+
+#~ msgid "1 - mono"
+#~ msgstr "1 - mono"
+
+#~ msgid "2 - stereo"
+#~ msgstr "2 - stereo"
+
+#, fuzzy
+#~ msgid "---- Audio Filters ----"
+#~ msgstr "---影像濾波器---"
+
+#~ msgid " Echo"
+#~ msgstr " 迴聲"
+
+#~ msgid " Reverb"
+#~ msgstr " Reverb"
+
+#~ msgid " Fuzz"
+#~ msgstr " 模糊"
+
+#~ msgid " WahWah"
+#~ msgstr " WahWah"
+
+#~ msgid " Ducky"
+#~ msgstr " Ducky"
+
+#, fuzzy
+#~ msgid "_Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Device:"
+#~ msgstr "設備:"
+
+#~ msgid "Guvcview Video Capture"
+#~ msgstr "Guvcview Video Capture"
+
+#, fuzzy
+#~ msgid "Guvcview"
+#~ msgstr "Guvcview警告:"
+
+#~ msgid "Image Controls"
+#~ msgstr "影像設定"
+
+#, fuzzy
+#~ msgid "Video Controls"
+#~ msgstr "使用者設定"
+
+#, fuzzy
+#~ msgid "Audio Controls"
+#~ msgstr "使用者設定"
+
+#, fuzzy
+#~ msgid "Photo file name"
+#~ msgstr "圖片檔案名稱"
+
+#, fuzzy
+#~ msgid "Video file name"
+#~ msgstr "圖片檔案名稱"
+
+#~ msgid "start new"
+#~ msgstr "馬上啟動"
+
+#~ msgid "restart"
+#~ msgstr "重新啟動"
+
+#~ msgid "new"
+#~ msgstr "新增"
+
+#~ msgid "cancel"
+#~ msgstr "取消"
+
+#~ msgid ""
+#~ "launch new process or restart?.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "啟動新的程序或重新啟動?\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "video codec values"
+#~ msgstr "音頻編碼器數值"
+
+#~ msgid ""
+#~ "                              encoder fps:   \n"
+#~ " (0 - use fps combobox value)"
+#~ msgstr ""
+#~ "                              encoder fps:   \n"
+#~ " (0 - use fps combobox value)"
+
+#~ msgid "bit rate:   "
+#~ msgstr "bit rate:   "
+
+#~ msgid "qmax:   "
+#~ msgstr "qmax:   "
+
+#~ msgid "qmin:   "
+#~ msgstr "qmin:   "
+
+#~ msgid "max. qdiff:   "
+#~ msgstr "max. qdiff:   "
+
+#~ msgid "dia size:   "
+#~ msgstr "dia size:   "
+
+#~ msgid "pre dia size:   "
+#~ msgstr "pre dia size:   "
+
+#~ msgid "pre me:   "
+#~ msgstr "pre me:   "
+
+#~ msgid "pre cmp:   "
+#~ msgstr "pre cmp:   "
+
+#~ msgid "cmp:   "
+#~ msgstr "cmp:   "
+
+#~ msgid "sub cmp:   "
+#~ msgstr "sub cmp:   "
+
+#~ msgid "last predictor count:   "
+#~ msgstr "last predictor count:   "
+
+#~ msgid "gop size:   "
+#~ msgstr "gop size:   "
+
+#~ msgid "qcompress:   "
+#~ msgstr "qcompress:   "
+
+#~ msgid "qblur:   "
+#~ msgstr "qblur:   "
+
+#~ msgid "subq:   "
+#~ msgstr "subq:   "
+
+#~ msgid "framerefs:   "
+#~ msgstr "framerefs:   "
+
+#~ msgid "me method:   "
+#~ msgstr "me method:   "
+
+#~ msgid "mb decision:   "
+#~ msgstr "mb decision:   "
+
+#~ msgid "audio codec values"
+#~ msgstr "音頻編碼器數值"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Down"
+#~ msgstr "下"
+
+#~ msgid "Up"
+#~ msgstr "上"
+
+#~ msgid "Auto Focus (continuous)"
+#~ msgstr "自動對焦(連續)"
+
+#~ msgid "set Focus"
+#~ msgstr "設定焦點"
+
+#, fuzzy
+#~ msgid "_Apply"
+#~ msgstr "套用"
+
+#~ msgid "Frame Rate:"
+#~ msgstr "影格率"
+
+#~ msgid "Resolution:"
+#~ msgstr "影像尺寸:"
+
+#~ msgid "Camera Output:"
+#~ msgstr "攝影機輸出:"
+
+#~ msgid "---- Video Filters ----"
+#~ msgstr "---影像濾波器---"
+
+#~ msgid " Mirror"
+#~ msgstr " 鏡像(水平翻轉)"
+
+#~ msgid " Invert"
+#~ msgstr " 倒置(垂直翻轉)"
+
+#~ msgid " Negative"
+#~ msgstr " 負片效果"
+
+#~ msgid " Mono"
+#~ msgstr " 灰階"
+
+#~ msgid " Pieces"
+#~ msgstr " 馬賽克"
+
+#~ msgid " Particles"
+#~ msgstr " 顆粒"
+
+#, fuzzy
+#~ msgid "Print version"
+#~ msgstr "列印版本"
+
+#, fuzzy
+#~ msgid "Set device name (def: /dev/video0)"
+#~ msgstr "使用影像設備[default: /dev/video0]"
+
+#, fuzzy
+#~ msgid "Set capture method [read | mmap (def)]"
+#~ msgstr "擷取方法(1-mmap (default)  2-read)"
+
+#, fuzzy
+#~ msgid ""
+#~ "Guvcview version %s\n"
+#~ "\n"
+#~ msgstr "Guvcview警告:"
+
+#~ msgid "Audio"
+#~ msgstr "音頻"
+
+#~ msgid " Sound"
+#~ msgstr " 聲音"
+
+#~ msgid "---- Audio Effects ----"
+#~ msgstr "---音頻效果---"
+
+#~ msgid "Save File"
+#~ msgstr "存檔"
+
+#~ msgid "codec values"
+#~ msgstr "編解碼器的值"
+
+#~ msgid "Cap. Video"
+#~ msgstr "錄影"
+
+#~ msgid "GUVCViewer Controls"
+#~ msgstr "GUVCViewer設定"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "Guvcview 錯誤:\n"
+#~ "\n"
+#~ "設備無法開啟"
+
+#~ msgid ""
+#~ "Please make sure the camera is connected\n"
+#~ "and that the correct driver is installed."
+#~ msgstr ""
+#~ "請確定攝影機已連接\n"
+#~ "且已安裝正確的驅動程式"
+
+#~ msgid ""
+#~ "Guvcview:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Guvcview:\n"
+#~ "\n"
+#~ "UVC 外掛控制"
+
+#~ msgid "Extension controls were added to the UVC driver"
+#~ msgstr "外掛控制已經被新增到UVC驅動程式中"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "UVC Extension controls"
+#~ msgstr ""
+#~ "Guvcview 錯誤:\n"
+#~ "\n"
+#~ "UVC 外掛控制"
+
+#~ msgid ""
+#~ "An error occurred while adding extension\n"
+#~ "controls to the UVC driver\n"
+#~ "Make sure you run guvcview as root (or sudo)."
+#~ msgstr ""
+#~ "當新增外掛時有一個錯誤發生\n"
+#~ "控制UVC驅動程式\n"
+#~ "確定你是使用root(或sudo)來執行guvcview"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Can't set a valid video stream for guvcview"
+#~ msgstr ""
+#~ "Guvcview 錯誤:\n"
+#~ "\n"
+#~ "不能為guvcview設置一個有效視訊串流值"
+
+#~ msgid ""
+#~ "Make sure your device driver is v4l2 compliant\n"
+#~ "and that it is properly installed."
+#~ msgstr ""
+#~ "請確定您的設備驅動程式符合v4l2標準\n"
+#~ "且它已被正確安裝。"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to start with minimum setup"
+#~ msgstr ""
+#~ "Guvcview 錯誤:\n"
+#~ "\n"
+#~ "無法啟動最小安裝"
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "請重新連接你的攝影機"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Couldn't query device capabilities"
+#~ msgstr ""
+#~ "Guvcview錯誤:\n"
+#~ "\n"
+#~ "設備無法開啟"
+
+#~ msgid "Make sure the device driver supports v4l2."
+#~ msgstr "確定你的設備驅動程式支援 v4l2."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Read method error"
+#~ msgstr ""
+#~ "Guvcview錯誤:\n"
+#~ "\n"
+#~ "設備無法開啟"
+
+#~ msgid "Please try mmap instead (--capture_method=1)."
+#~ msgstr "請試試mmap而不是(--capture_method=1)."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "Guvcview錯誤:\n"
+#~ "\n"
+#~ "設備無法開啟"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "請試試重新啟動你的系統."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to create Video Thread"
+#~ msgstr ""
+#~ "Guvcview錯誤:\n"
+#~ "\n"
+#~ "設備無法開啟"
+
+#~ msgid "Please report it to http://developer.berlios.de/bugs/?group_id=8179"
+#~ msgstr "請回報到http://developer.berlios.de/bugs/?group_id=8179"
+
+#~ msgid "Displays debug information"
+#~ msgstr "顯示debug訊息"
+
+#~ msgid "Exit after adding UVC extension controls (needs root/sudo)"
+#~ msgstr "在新增外掛控制後離開(需要使用root/sudo)"
+
+#~ msgid "Don't stream video (image controls only)"
+#~ msgstr "不能串流影像(只能控制圖片)"
+
+#~ msgid "Configuration file"
+#~ msgstr "設置檔案"
+
+#~ msgid "Hardware accelaration (enable(1) | disable(0))"
+#~ msgstr "硬體加速(啟用(1) | 停用(0))"
+
+#~ msgid "Frame size, default: 640x480"
+#~ msgstr "影格尺寸,預設值:640x480"
+
+#~ msgid "Image capture interval in seconds"
+#~ msgstr "圖片擷取間隔秒數"
+
+#~ msgid "Number of Pictures to capture"
+#~ msgstr "圖片擷取數"
+
+#~ msgid "Video File name (capture from start)"
+#~ msgstr "影像檔案名稱(從開始擷取)"
+
+#~ msgid "Video capture time (in seconds)"
+#~ msgstr "影像擷取時間(秒數)"
+
+#~ msgid "Exits guvcview after closing video"
+#~ msgstr "在關掉影像後離開guvcview"
+
+#~ msgid "Number of initial frames to skip"
+#~ msgstr "跳過的初始影格數"
+
+#~ msgid "Show FPS value (enable(1) | disable (0))"
+#~ msgstr "顯示FPS值(啟用(1) | 停用 (0))"
+
+#~ msgid "Load Profile at start"
+#~ msgstr "在啟動時讀取專案"
+
+#~ msgid "- local options"
+#~ msgstr "-本地選項"
+
+#~ msgid "Cap. Image"
+#~ msgstr "拍照"
+
+#~ msgid "Not enough free space left on disk"
+#~ msgstr "在硬碟上沒有足夠的剩餘空間"
+
+#~ msgid "YUY2 - uncomp YUV"
+#~ msgstr "YUY2 - uncomp YUV"
+
+#~ msgid "RGB - uncomp BMP"
+#~ msgstr "RGB - uncomp BMP"
+
+#~ msgid " Show"
+#~ msgstr " 顯示"
+
+#~ msgid "Quality:"
+#~ msgstr "品質:"

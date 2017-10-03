@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=guvcview
+_GenericName=GTK UVC video viewer
+_X-GNOME-FullName=GTK UVC video viewer
+_Comment=A video viewer and capturer for the linux uvc driver
+TryExec=guvcview
+Exec=guvcview
+Icon=@prefix@/share/pixmaps/guvcview/guvcview.png
+Terminal=false
+Type=Application
+Categories=Video;AudioVideo;
+X-GNOME-Gettext-Domain=guvcview
+StartupNotify=true

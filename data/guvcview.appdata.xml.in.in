@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Paulo Assis <pj.assis@gmail.com> -->
+<application>
+ <id type="desktop">guvcview.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-2.0+</project_license>
+ <name>Simple UVC Viewer</name>
+ <_summary>Capture video from v4l2 devices</_summary>
+ <description>
+  <_p>Video capture tool for video4linux2 compliant cameras.</_p>
+  <_p>With a special emphasis on the linux uvc driver,
+     it provides Image (jpg, png, bmp) and
+     Video (mjpeg, flv1, wmv1, mpg2, mpg4,...) capture
+     with sound in several formats( currently: avi and matroska).</_p>
+  <_p>It also supports a control panel option (--control_only)
+     that is compatible with any other v4l2 app.</_p>
+ </description>
+ <screenshots>
+  <screenshot>https://sourceforge.net/p/guvcview/screenshot/guvcview_image_tab.png</screenshot>
+  <screenshot>https://sourceforge.net/p/guvcview/screenshot/guvcview_h264_tab.png</screenshot>
+  <screenshot>https://sourceforge.net/p/guvcview/screenshot/guvcview_video_tab.png</screenshot>
+  <screenshot>https://sourceforge.net/p/guvcview/screenshot/guvcview_audio_tab.png</screenshot>
+  <screenshot>https://a.fsdn.com/con/app/proj/guvcview/screenshots/guvcview_video_preview.png</screenshot>
+ </screenshots>
+ <url type="homepage">http://guvcview.sourceforge.net/</url>
+ <updatecontact>assisp@gmail.com</updatecontact>
+</application>

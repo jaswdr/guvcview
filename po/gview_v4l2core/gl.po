@@ -1,0 +1,561 @@
+# Galician translation for guvcview
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the guvcview package.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# Dario Villar Veres <dario.villar.v@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: guvcview\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-02-25 05:34+0000\n"
+"Last-Translator: Dario <dario.villar.v@gmail.com>\n"
+"Language-Team: Galician <gl@li.org>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "Brillo"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "Contraste"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "Ton"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "Saturación"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "Focalización"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "Gamma"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr "Matiz, Automático"
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "Foco, Automático"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "Modo Manual"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "Modo Automático"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr "Nivel de negro"
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr "Balance vermello"
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr "Balance azul"
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr "Exposición"
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr "Ganancia, Automática"
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "Ganancia"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr "Xiro horizontal"
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr "Xiro vertical"
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr "Efectos de cor"
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr "Exposición automática"
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr "Tempo de exposición, Absoluto"
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr "Inclinación, relativo"
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr "Inclinación, Restabelecer"
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr "Foco, absoluto"
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr "Foco, relativo"
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr "Foco, automático"
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr "Privacidade"
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr "Exposición, Automático"
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr "Exposición, Prioridade automática"
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr "Exposición (absoluto)"
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr ""
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr "Foco"
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr "Foco(absoluto)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63
+msgid "Off"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64
+msgid "On"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65
+msgid "Blinking"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66
+#, fuzzy
+msgid "Auto"
+msgstr "Modo Automático"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Raw camera input"
+#~ msgstr "Saída da cámara:"
+
+#~ msgid "MS MP4 V3"
+#~ msgstr "MS MP4 V3"
+
+#~ msgid "MPEG4-ASP"
+#~ msgstr "MPEG4-ASP"
+
+#~ msgid "MPEG4-AVC (H264)"
+#~ msgstr "MPEG4-AVC (H264)"
+
+#~ msgid "PULSEAUDIO"
+#~ msgstr "PULSEAUDIO"
+
+#~ msgid "Input Device:"
+#~ msgstr "Dispositivo de entrada:"
+
+#~ msgid "Sample Rate:"
+#~ msgstr "Taxa de mostraxe:"
+
+#~ msgid "Channels:"
+#~ msgstr "Canles:"
+
+#~ msgid "1 - mono"
+#~ msgstr "1 - mono"
+
+#~ msgid "2 - stereo"
+#~ msgstr "2 - stereo"
+
+#~ msgid " Echo"
+#~ msgstr " Echo"
+
+#~ msgid " Reverb"
+#~ msgstr " Reverberar"
+
+#~ msgid " Fuzz"
+#~ msgstr " Difuso"
+
+#~ msgid "Stop Video (V)"
+#~ msgstr "Deter vídeo (V)"
+
+#~ msgid "Cap. Video (V)"
+#~ msgstr "Cap. Video (V)"
+
+#~ msgid "Error"
+#~ msgstr "Erro"
+
+#, fuzzy
+#~ msgid "_Cancel"
+#~ msgstr "cancelar"
+
+#~ msgid "Device:"
+#~ msgstr "Dispositivo:"
+
+#~ msgid "Guvcview Video Capture"
+#~ msgstr "Capturador de vídeo GUVCView"
+
+#~ msgid "Cap. Image (I)"
+#~ msgstr "Cap. Imaxe (I)"
+
+#, fuzzy
+#~ msgid "Video Controls"
+#~ msgstr "Controles de GUVCViewer"
+
+#, fuzzy
+#~ msgid "Audio Controls"
+#~ msgstr "Controles de GUVCViewer"
+
+#, fuzzy
+#~ msgid "Photo file name"
+#~ msgstr "Nome da imaxe"
+
+#, fuzzy
+#~ msgid "Video file name"
+#~ msgstr "Nome da imaxe"
+
+#~ msgid "restart"
+#~ msgstr "reiniciar"
+
+#~ msgid "new"
+#~ msgstr "novo"
+
+#~ msgid "cancel"
+#~ msgstr "cancelar"
+
+#~ msgid "bit rate:   "
+#~ msgstr "Taxa de bits:   "
+
+#~ msgid "qmax:   "
+#~ msgstr "qmax:   "
+
+#~ msgid "qmin:   "
+#~ msgstr "qmin:   "
+
+#~ msgid "max. qdiff:   "
+#~ msgstr "max. qdiff:   "
+
+#~ msgid "pre me:   "
+#~ msgstr "pre me:   "
+
+#~ msgid "pre cmp:   "
+#~ msgstr "pre cmp:   "
+
+#~ msgid "cmp:   "
+#~ msgstr "cmp:   "
+
+#~ msgid "sub cmp:   "
+#~ msgstr "sub cmp:   "
+
+#~ msgid "gop size:   "
+#~ msgstr "Tamaño do gop:   "
+
+#~ msgid "Left"
+#~ msgstr "Esquerda"
+
+#~ msgid "Right"
+#~ msgstr "Dereita"
+
+#~ msgid "Down"
+#~ msgstr "Abaixo"
+
+#~ msgid "Up"
+#~ msgstr "Arriba"
+
+#~ msgid "Auto Focus (continuous)"
+#~ msgstr "Foco automático(continuo)"
+
+#~ msgid "set Focus"
+#~ msgstr "Definir foco"
+
+#, fuzzy
+#~ msgid "_Apply"
+#~ msgstr "Aplicar"
+
+#~ msgid "Frame Rate:"
+#~ msgstr "Taxa de fotogramas:"
+
+#~ msgid "Resolution:"
+#~ msgstr "Resolution:"
+
+#~ msgid "Camera Output:"
+#~ msgstr "Saída da cámara:"
+
+#~ msgid " Mirror"
+#~ msgstr " Espello"
+
+#~ msgid " Invert"
+#~ msgstr " Inverter"
+
+#~ msgid " Negative"
+#~ msgstr " Negativo"
+
+#~ msgid " Mono"
+#~ msgstr " Mono"
+
+#~ msgid " Particles"
+#~ msgstr " Partículas"
+
+#, fuzzy
+#~ msgid "Print version"
+#~ msgstr "Mostrar a versión"
+
+#~ msgid "Audio"
+#~ msgstr "Son"
+
+#~ msgid " Sound"
+#~ msgstr " Son"
+
+#~ msgid "Save File"
+#~ msgstr "Gardar o ficheiro"
+
+#~ msgid "Cap. Video"
+#~ msgstr "Cap. Video"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "Erro de GUVCView:\n"
+#~ "\n"
+#~ "Non foi posíbel conectar a cámara"
+
+#~ msgid ""
+#~ "Please make sure the camera is connected\n"
+#~ "and that the correct driver is installed."
+#~ msgstr ""
+#~ "Asegúrese de que a súa cámara está conectada\n"
+#~ "e que o controlador está correctamente instalada."
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "Conecte de novo a súa cámara."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Couldn't query device capabilities"
+#~ msgstr ""
+#~ "Erro de GUVCView:\n"
+#~ "\n"
+#~ "Non se poideron consultar as capacidades do dispositivo"
+
+#~ msgid "Make sure the device driver supports v4l2."
+#~ msgstr "Asegúrese de que o controlador do dispositivo soporta v4l2."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Read method error"
+#~ msgstr ""
+#~ "Erro de GUVCView:\n"
+#~ "\n"
+#~ "Erro no método de lectura"
+
+#~ msgid "Please try mmap instead (--capture_method=1)."
+#~ msgstr "Probe mmap no seu lugar  (--capture_method=1)."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "Erro de GUVCView:\n"
+#~ "\n"
+#~ "Non foi posíbel asignarlle memoria aos búferes"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "Probe reiniciando o seu sistema."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to create Video Thread"
+#~ msgstr ""
+#~ "Erro en GUVCView:\n"
+#~ "\n"
+#~ "Non foi posíble crear un fío de execución de vídeo"
+
+#~ msgid "Please report it to http://developer.berlios.de/bugs/?group_id=8179"
+#~ msgstr ""
+#~ "Por favor, informe do erro a http://developer.berlios.de/bugs/?"
+#~ "group_id=8179"
+
+#~ msgid "Frame size, default: 640x480"
+#~ msgstr "Tamaño predeterminado do marco:640x480"
+
+#~ msgid "Cap. Image"
+#~ msgstr "Cap. Imaxe"
+
+#~ msgid " Show"
+#~ msgstr " Mostrar"
+
+#~ msgid "Quality:"
+#~ msgstr "Calidade:"

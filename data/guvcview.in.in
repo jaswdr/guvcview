@@ -1,0 +1,7 @@
+?package(guvcview):\
+	needs="X11"\
+	section="Applications/Video"\
+	title="guvcview"\
+	longtitle="GTK UVC Viewer - uvc video viewer and capturer"\
+	command="guvcview"\
+	icon="@prefix@/share/pixmaps/guvcview/guvcview.png"

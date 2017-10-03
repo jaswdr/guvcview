@@ -1,0 +1,605 @@
+# Hebrew translation for guvcview
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the guvcview package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: guvcview\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-02-25 05:36+0000\n"
+"Last-Translator: Paulo Assis <pj.assis@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr "פקדי משתמש"
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "בהירות"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "ניגודיות"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "גוון"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "רוויה"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "חדות"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "גאמה"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr "פיצוי אור אחורי"
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr "תדר חשמל"
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr "גוון, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "מיקוד, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "מצב ידני"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "מצב אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr "מצב עדיפות צמצם"
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr "רמת שחור"
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr "איזון לובן, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr "איזון האדום"
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr "איזון הכחול"
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr "חשיפה"
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr "מרווח, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "הישג"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr "היפוך אופקי"
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr "היפוך אנכי"
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr "מרכז אופקי"
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr "מרכז אנכי"
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr ""
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr "פקדי מצלמה"
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr "חשיפה אוטומטית"
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr "זמן חשיפה, מוחלט"
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr "נטייה, יחסי"
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr "נטייה, אפס"
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr "מיקוד, מוחלט"
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr "מיקוד, יחסי"
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr "מיקוד, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr "פרטיות"
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr "חשיפה, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr "חשיפה, עדיפות אוטומטית"
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr "חשיפה (מוחלטת)"
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr "טמפרטורת איזון הלבן, אוטומטית"
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr "טפמרטורת איזון הלבן"
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr "רכיב איזון הלבן, אוטומטי"
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr "רכיב איזון הלבן הכחול"
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr "רכיב איזון הלבן האדום"
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63
+msgid "Off"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64
+msgid "On"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65
+msgid "Blinking"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66
+#, fuzzy
+msgid "Auto"
+msgstr "מצב אוטומטי"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr "הטייה (יחסי)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr "איפוס הטייה"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr "מיקוד (מוחלט)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr "מצב LED1"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr "תדר LED1"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr "בטל עיבוד וידאו"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Raw camera input"
+#~ msgstr "פלט מצלמה:"
+
+#~ msgid "MJPG - compressed"
+#~ msgstr "MJPG - מקובץ"
+
+#~ msgid "MPEG video 1"
+#~ msgstr "MPEG וידאו 1"
+
+#~ msgid "FLV1 - flash video 1"
+#~ msgstr "FLV1 - וידאו פלאש 1"
+
+#~ msgid "WMV1 - win. med. video 7"
+#~ msgstr "WMV1 - וינדוס מדיה וידאו 7"
+
+#~ msgid "MPG2 - MPG2 format"
+#~ msgstr "MPG2 - פורמט MPG2"
+
+#~ msgid "MS MP4 V3"
+#~ msgstr "MS MP4 V3"
+
+#~ msgid "PULSEAUDIO"
+#~ msgstr "PULSEAUDIO"
+
+#~ msgid "Sample Rate:"
+#~ msgstr "קצב דגימה"
+
+#~ msgid "Channels:"
+#~ msgstr "ערוצים:"
+
+#~ msgid "1 - mono"
+#~ msgstr "1 - מונו"
+
+#~ msgid "2 - stereo"
+#~ msgstr "2 - סטריאו"
+
+#, fuzzy
+#~ msgid "---- Audio Filters ----"
+#~ msgstr "--- מסנני וידאו ---"
+
+#~ msgid " Echo"
+#~ msgstr " הד"
+
+#, fuzzy
+#~ msgid "_Cancel"
+#~ msgstr "בטל"
+
+#~ msgid "Device:"
+#~ msgstr "התקן:"
+
+#~ msgid "Image Controls"
+#~ msgstr "פקדי תמונה"
+
+#, fuzzy
+#~ msgid "Video Controls"
+#~ msgstr "פקדי משתמש"
+
+#, fuzzy
+#~ msgid "Audio Controls"
+#~ msgstr "פקדי משתמש"
+
+#, fuzzy
+#~ msgid "Photo file name"
+#~ msgstr "שם קובץ תמונה"
+
+#, fuzzy
+#~ msgid "Video file name"
+#~ msgstr "שם קובץ תמונה"
+
+#~ msgid "start new"
+#~ msgstr "הפעל עכשיו"
+
+#~ msgid "restart"
+#~ msgstr "הפעל מחדש"
+
+#~ msgid "new"
+#~ msgstr "חדש"
+
+#~ msgid "cancel"
+#~ msgstr "בטל"
+
+#~ msgid ""
+#~ "launch new process or restart?.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "הפעל תהליך חדש או הפעל מחדש?.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "video codec values"
+#~ msgstr "ערכי מקודד"
+
+#~ msgid "bit rate:   "
+#~ msgstr "קצב סיביות:   "
+
+#~ msgid "Left"
+#~ msgstr "שמאל"
+
+#~ msgid "Right"
+#~ msgstr "ימין"
+
+#~ msgid "Down"
+#~ msgstr "למטה"
+
+#~ msgid "Up"
+#~ msgstr "למעלה"
+
+#~ msgid "Auto Focus (continuous)"
+#~ msgstr "מיקוד אוטומטי (מתמשך)"
+
+#~ msgid "set Focus"
+#~ msgstr "הגדר מיקוד"
+
+#, fuzzy
+#~ msgid "_Apply"
+#~ msgstr "החל"
+
+#~ msgid "Resolution:"
+#~ msgstr "רזולוציה:"
+
+#~ msgid "Camera Output:"
+#~ msgstr "פלט מצלמה:"
+
+#~ msgid "---- Video Filters ----"
+#~ msgstr "--- מסנני וידאו ---"
+
+#~ msgid " Mirror"
+#~ msgstr " מראה"
+
+#~ msgid " Invert"
+#~ msgstr " הפוך"
+
+#~ msgid " Mono"
+#~ msgstr " מונו"
+
+#~ msgid " Pieces"
+#~ msgstr " חלקים"
+
+#, fuzzy
+#~ msgid "Print version"
+#~ msgstr "מדפיס גרסה"
+
+#, fuzzy
+#~ msgid "Set device name (def: /dev/video0)"
+#~ msgstr "התקן וידאו לשימוש [ברירת מחדל:/dev/video0]"
+
+#~ msgid "Audio"
+#~ msgstr "שמע"
+
+#~ msgid " Sound"
+#~ msgstr " קול"
+
+#~ msgid "---- Audio Effects ----"
+#~ msgstr "--- אפקטים קוליים ---"
+
+#~ msgid "Save File"
+#~ msgstr "שמור קובץ"
+
+#~ msgid "Cap. Video"
+#~ msgstr "לכד וידאו"
+
+#~ msgid "GUVCViewer Controls"
+#~ msgstr "פקדי GUVCViewer"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא יכול לפתוח התקן"
+
+#~ msgid ""
+#~ "Please make sure the camera is connected\n"
+#~ "and that the correct driver is installed."
+#~ msgstr ""
+#~ "אנא וודא שהמצלמה מחוברת\n"
+#~ "ושמנהל ההתקן הנכון מותקן."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Can't set a valid video stream for guvcview"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא יכול להגדיר זרימת וידאו תקפה לguvcview"
+
+#~ msgid ""
+#~ "Make sure your device driver is v4l2 compliant\n"
+#~ "and that it is properly installed."
+#~ msgstr ""
+#~ "וודא שמנהל ההתקן שלך תואם v4l2\n"
+#~ "ושהוא מותקן כהלכה."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to start with minimum setup"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא ניתן להתחיל עם התקנה מינימאלית"
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "אנא חבר מחדש את המצלמה."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Couldn't query device capabilities"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא ניתן לבדוק את יכולות ההתקן"
+
+#~ msgid "Make sure the device driver supports v4l2."
+#~ msgstr "וודא שמנהל ההתקן שלך תואם v4l2."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Read method error"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "קרא שגיאת שיטה"
+
+#~ msgid "Please try mmap instead (--capture_method=1)."
+#~ msgstr "נסה את mmap במקום (--capture_method=1)."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא ניתן להקצות חוצץ"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "נסה לאתחל את המערכת."
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to create Video Thread"
+#~ msgstr ""
+#~ "שגיאה בGuvcview:\n"
+#~ "\n"
+#~ "לא יכול ליצור שרשור וידאו"
+
+#~ msgid "Please report it to http://developer.berlios.de/bugs/?group_id=8179"
+#~ msgstr "דווח על כך לhttp://developer.berlios.de/bugs/?group_id=8179"
+
+#~ msgid "Configuration file"
+#~ msgstr "קובץ הגדרות"
+
+#~ msgid "Hardware accelaration (enable(1) | disable(0))"
+#~ msgstr "האצת חומרה (פעיל(1) | מנוטרל(0))"
+
+#~ msgid "Frame size, default: 640x480"
+#~ msgstr "גודל פריים, ברירת מחדל: 640x480"
+
+#~ msgid "Number of Pictures to capture"
+#~ msgstr "מספר תמונות ללכידה"
+
+#~ msgid "Video File name (capture from start)"
+#~ msgstr "שם קובץ וידאו (לוכד מההתחלה)"
+
+#~ msgid "Video capture time (in seconds)"
+#~ msgstr "זמן לכידת וידאו (בשניות)"
+
+#~ msgid "Exits guvcview after closing video"
+#~ msgstr "יוצא מguvcview אחרי סגירת וידאו"
+
+#~ msgid "Show FPS value (enable(1) | disable (0))"
+#~ msgstr "מראה ערך פריימים לשניה (FPS) (פעיל(1) | מנוטרל(2))"
+
+#~ msgid "Load Profile at start"
+#~ msgstr "טען פרופיל בהפעלה"
+
+#~ msgid "- local options"
+#~ msgstr "- אפשרויות מקומיות"
+
+#~ msgid "Cap. Image"
+#~ msgstr "לכד תמונה"
+
+#~ msgid "YUY2 - uncomp YUV"
+#~ msgstr "YUY2 - YUV לא מקובץ"
+
+#~ msgid "RGB - uncomp BMP"
+#~ msgstr "RGB - BMP לא מקובץ"
+
+#~ msgid " Show"
+#~ msgstr " הצג"
+
+#~ msgid "Quality:"
+#~ msgstr "איכות:"

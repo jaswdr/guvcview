@@ -1,0 +1,15 @@
+	../data/guvcview.desktop.in.in \
+	../data/guvcview.appdata.xml.in.in \
+	../gview_v4l2core/v4l2_controls.c \
+	../gview_v4l2core/v4l2_xu_ctrls.c \
+	../gview_encoder/audio_codecs.c \
+	../gview_encoder/video_codecs.c \
+	../guvcview/gui_gtk3_audioctrls.c \
+	../guvcview/gui_gtk3.c \
+	../guvcview/gui_gtk3_callbacks.c \
+	../guvcview/gui_gtk3_h264ctrls.c \
+	../guvcview/gui_gtk3_menu.c \
+	../guvcview/gui_gtk3_v4l2ctrls.c \
+	../guvcview/gui_gtk3_videoctrls.c \
+	../guvcview/options.c \
+	../guvcview/video_capture.c

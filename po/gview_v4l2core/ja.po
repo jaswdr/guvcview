@@ -1,0 +1,544 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GUVCView 1.0.2\n"
+"Report-Msgid-Bugs-To: pj.assis@gmail.com\n"
+"POT-Creation-Date: 2014-08-17 22:49+0100\n"
+"PO-Revision-Date: 2013-02-25 05:38+0000\n"
+"Last-Translator: Paulo Assis <pj.assis@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-12-08 10:36+0000\n"
+"X-Generator: Launchpad (build 16869)\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-Language: Japanese\n"
+
+#.
+#. * needed only for language files (not used)
+#.
+#. V4L2 control strings
+#: ../gview_v4l2core/v4l2_controls.c:49
+msgid "User Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:50
+msgid "Brightness"
+msgstr "輝度"
+
+#: ../gview_v4l2core/v4l2_controls.c:51
+msgid "Contrast"
+msgstr "コントラスト"
+
+#: ../gview_v4l2core/v4l2_controls.c:52
+msgid "Hue"
+msgstr "色相"
+
+#: ../gview_v4l2core/v4l2_controls.c:53
+msgid "Saturation"
+msgstr "彩度"
+
+#: ../gview_v4l2core/v4l2_controls.c:54
+msgid "Sharpness"
+msgstr "鮮明度"
+
+#: ../gview_v4l2core/v4l2_controls.c:55
+msgid "Gamma"
+msgstr "ガンマ"
+
+#: ../gview_v4l2core/v4l2_controls.c:56
+msgid "Backlight Compensation"
+msgstr "バックライト補正"
+
+#: ../gview_v4l2core/v4l2_controls.c:57
+msgid "Power Line Frequency"
+msgstr "電源ライン周波数"
+
+#: ../gview_v4l2core/v4l2_controls.c:58
+msgid "Hue, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:59
+msgid "Focus, Auto"
+msgstr "フォーカス,自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:60
+msgid "Manual Mode"
+msgstr "手動モード"
+
+#: ../gview_v4l2core/v4l2_controls.c:61
+msgid "Auto Mode"
+msgstr "自動モード"
+
+#: ../gview_v4l2core/v4l2_controls.c:62
+msgid "Shutter Priority Mode"
+msgstr "シャッター優先モード"
+
+#: ../gview_v4l2core/v4l2_controls.c:63
+msgid "Aperture Priority Mode"
+msgstr "絞り優先モード"
+
+#: ../gview_v4l2core/v4l2_controls.c:64
+msgid "Black Level"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:65
+msgid "White Balance, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:66
+msgid "Do White Balance"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:67
+msgid "Red Balance"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:68
+msgid "Blue Balance"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:69
+msgid "Exposure"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:70
+msgid "Gain, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:71
+msgid "Gain"
+msgstr "ゲイン"
+
+#: ../gview_v4l2core/v4l2_controls.c:72
+msgid "Horizontal Flip"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:73
+msgid "Vertical Flip"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:74
+msgid "Horizontal Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:75
+msgid "Vertical Center"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:76
+msgid "Chroma AGC"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:77
+msgid "Color Killer"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:78
+msgid "Color Effects"
+msgstr ""
+
+#. CAMERA CLASS control strings
+#: ../gview_v4l2core/v4l2_controls.c:81
+msgid "Camera Controls"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:82
+msgid "Auto Exposure"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:83
+msgid "Exposure Time, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:84
+msgid "Exposure, Dynamic Framerate"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:85
+msgid "Pan, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:86
+msgid "Tilt, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:87
+msgid "Pan, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:88
+msgid "Tilt, Reset"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:89
+msgid "Pan, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:91
+msgid "Focus, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:92
+msgid "Focus, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:93
+msgid "Focus, Automatic"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:94
+msgid "Zoom, Absolute"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:95
+msgid "Zoom, Relative"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:96
+msgid "Zoom, Continuous"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:97
+msgid "Privacy"
+msgstr ""
+
+#. UVC specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:100
+msgid "Exposure, Auto"
+msgstr "露出、自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:101
+msgid "Exposure, Auto Priority"
+msgstr "露出、自動優先"
+
+#: ../gview_v4l2core/v4l2_controls.c:102
+msgid "Exposure (Absolute)"
+msgstr "Exposure (完全な)"
+
+#: ../gview_v4l2core/v4l2_controls.c:103
+msgid "White Balance Temperature, Auto"
+msgstr "ホワイトバランス温度、自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:104
+msgid "White Balance Temperature"
+msgstr "ホワイトバランス温度"
+
+#: ../gview_v4l2core/v4l2_controls.c:105
+msgid "White Balance Component, Auto"
+msgstr "ホワイトバランス成分、自動"
+
+#: ../gview_v4l2core/v4l2_controls.c:106
+msgid "White Balance Blue Component"
+msgstr "ホワイトバランス青成分"
+
+#: ../gview_v4l2core/v4l2_controls.c:107
+msgid "White Balance Red Component"
+msgstr "ホワイトバランス赤成分"
+
+#. libwebcam specific control strings
+#: ../gview_v4l2core/v4l2_controls.c:110
+msgid "Focus"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_controls.c:111
+msgid "Focus (Absolute)"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:63
+msgid "Off"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:64
+msgid "On"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:65
+msgid "Blinking"
+msgstr ""
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:66
+#, fuzzy
+msgid "Auto"
+msgstr "自動モード"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:73
+msgid "Pan (relative)"
+msgstr "パン (相対)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:86
+msgid "Tilt (relative)"
+msgstr "チルト (相対)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:99
+msgid "Pan Reset"
+msgstr "パン リセット"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:112
+msgid "Tilt Reset"
+msgstr "チルト リセット"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:125
+msgid "Focus (absolute)"
+msgstr "フォーカス (完全な)"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:138
+msgid "LED1 Mode"
+msgstr "LED1 モード"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:151
+msgid "LED1 Frequency"
+msgstr "LED1 回数"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:164
+msgid "Disable video processing"
+msgstr "ビデオ処理 を無効にする"
+
+#: ../gview_v4l2core/v4l2_xu_ctrls.c:177
+msgid "Raw bits per pixel"
+msgstr "1画素あたりの生のビット"
+
+#, fuzzy
+#~ msgid "Raw camera input"
+#~ msgstr "カメラ出力:"
+
+#~ msgid "MJPG - compressed"
+#~ msgstr "MJPG - 圧縮"
+
+#~ msgid "Input Device:"
+#~ msgstr "入力デバイス:"
+
+#~ msgid "Sample Rate:"
+#~ msgstr "サンプルレート:"
+
+#~ msgid "Dev. Default"
+#~ msgstr "デバイス デフォルト"
+
+#~ msgid "Channels:"
+#~ msgstr "チャンネル:"
+
+#~ msgid "1 - mono"
+#~ msgstr "1 - モノラル"
+
+#~ msgid "2 - stereo"
+#~ msgstr "2 - ステレオ"
+
+#, fuzzy
+#~ msgid "---- Audio Filters ----"
+#~ msgstr "---- ビデオフィルタ ----"
+
+#~ msgid " Echo"
+#~ msgstr " Echo"
+
+#~ msgid " Reverb"
+#~ msgstr " Reverb"
+
+#~ msgid " Fuzz"
+#~ msgstr " Fuzz"
+
+#~ msgid " WahWah"
+#~ msgstr " WahWah"
+
+#~ msgid " Ducky"
+#~ msgstr " Ducky"
+
+#, fuzzy
+#~ msgid "_Cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid "Device:"
+#~ msgstr "デバイス:"
+
+#~ msgid "Image Controls"
+#~ msgstr "イメージコントロール"
+
+#, fuzzy
+#~ msgid "Video Controls"
+#~ msgstr "GUVCViewer コントロール"
+
+#, fuzzy
+#~ msgid "Audio Controls"
+#~ msgstr "イメージコントロール"
+
+#, fuzzy
+#~ msgid "Photo file name"
+#~ msgstr "画像ファイル名"
+
+#, fuzzy
+#~ msgid "Video file name"
+#~ msgstr "画像ファイル名"
+
+#~ msgid "start new"
+#~ msgstr "新しく開始する"
+
+#~ msgid "restart"
+#~ msgstr "再起動"
+
+#~ msgid "new"
+#~ msgstr "新規"
+
+#~ msgid "cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid ""
+#~ "launch new process or restart?.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "新しいプロセスを立ち上げるか、再起動しますか?\n"
+#~ "\n"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Down"
+#~ msgstr "下"
+
+#~ msgid "Up"
+#~ msgstr "上"
+
+#~ msgid "Auto Focus (continuous)"
+#~ msgstr "オートフォーカス(連続)"
+
+#~ msgid "set Focus"
+#~ msgstr "フォーカスを設定する"
+
+#~ msgid "Frame Rate:"
+#~ msgstr "フレームレート:"
+
+#~ msgid "Resolution:"
+#~ msgstr "解像度:"
+
+#~ msgid "Camera Output:"
+#~ msgstr "カメラ出力:"
+
+#~ msgid "---- Video Filters ----"
+#~ msgstr "---- ビデオフィルタ ----"
+
+#~ msgid " Mirror"
+#~ msgstr " 鏡"
+
+#~ msgid " Invert"
+#~ msgstr " 反転"
+
+#~ msgid " Negative"
+#~ msgstr " ネガ"
+
+#~ msgid " Mono"
+#~ msgstr " モノクロ"
+
+#~ msgid " Pieces"
+#~ msgstr " 断片"
+
+#, fuzzy
+#~ msgid "Print version"
+#~ msgstr "バージョンを表示する"
+
+#, fuzzy
+#~ msgid "Set device name (def: /dev/video0)"
+#~ msgstr "使用するビデオデバイス [デフォルト: /dev/video0]"
+
+#~ msgid "Audio"
+#~ msgstr "オーディオ"
+
+#~ msgid " Sound"
+#~ msgstr " サウンド"
+
+#~ msgid "---- Audio Effects ----"
+#~ msgstr "---- オーディオ エフェクト ----"
+
+#~ msgid "Save File"
+#~ msgstr "ファイルを保存する"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to open device"
+#~ msgstr ""
+#~ "Guvcview エラー:\n"
+#~ "\n"
+#~ "デバイスをオープンすることができません"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to start with minimum setup"
+#~ msgstr ""
+#~ "Guvcview エラー:\n"
+#~ "\n"
+#~ "最小限のセットアップから始めることができません"
+
+#~ msgid "Please reconnect your camera."
+#~ msgstr "カメラを再接続してください。"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to allocate Buffers"
+#~ msgstr ""
+#~ "Guvcview エラー:\n"
+#~ "\n"
+#~ "バッファを確保できません"
+
+#~ msgid "Please try restarting your system."
+#~ msgstr "システムを再起動してみてください。"
+
+#~ msgid ""
+#~ "Guvcview error:\n"
+#~ "\n"
+#~ "Unable to create Video Thread"
+#~ msgstr ""
+#~ "Guvcview エラー:\n"
+#~ "\n"
+#~ "ビデオスレッドを作成することができません"
+
+#~ msgid "Please report it to http://developer.berlios.de/bugs/?group_id=8179"
+#~ msgstr ""
+#~ "http://developer.berlios.de/bugs/?group_id=8179 にレポートしてください。"
+
+#~ msgid "Displays debug information"
+#~ msgstr "デバッグ情報を表示する"
+
+#~ msgid "Configuration file"
+#~ msgstr "設定ファイル"
+
+#~ msgid "Hardware accelaration (enable(1) | disable(0))"
+#~ msgstr "ハードウェアアクセラレーション (有効(1) | 無効(0))"
+
+#~ msgid "Frame size, default: 640x480"
+#~ msgstr "フレームサイズ、デフォルト: 640x480"
+
+#~ msgid "Image capture interval in seconds"
+#~ msgstr "秒単位の画像キャプチャ間隔"
+
+#~ msgid "Number of Pictures to capture"
+#~ msgstr "キャプチャする画像数"
+
+#~ msgid "Show FPS value (enable(1) | disable (0))"
+#~ msgstr "FPS 値の表示 (有効(1) | 無効 (0))"
+
+#~ msgid "Load Profile at start"
+#~ msgstr "開始時にプロファイルを読み込む"
+
+#~ msgid "- local options"
+#~ msgstr "- ローカルオプション"
+
+#~ msgid "Cap. Image"
+#~ msgstr "キャプチャ.画像"
+
+#~ msgid "YUY2 - uncomp YUV"
+#~ msgstr "YUY2 - 非圧縮 YUV"
+
+#~ msgid "RGB - uncomp BMP"
+#~ msgstr "RGB - 非圧縮 BMP"
+
+#~ msgid " Show"
+#~ msgstr " 表示"

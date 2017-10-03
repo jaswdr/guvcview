@@ -1,0 +1,50 @@
+.TH GUVCVIEW "1" "Aug 2009"
+.SH NAME
+guvcview \- GTK+ base UVC Viewer 
+.SH SYNOPSIS
+.B guvcview
+.SH DESCRIPTION
+\fBGuvcview\fR is a simple GTK+ interface for capturing and viewing video from
+devices supported by the Linux UVC driver.
+It fully supports video4linux2 so it should work with any driver that supports
+this API, including the gspca driver.
+
+.SH USAGE
+.TP
+guvcview [options...] 
+
+.SH OPTION
+  \-?, \-\-help                   Print help options
+  \-\-help\-all                   Print all help options
+  \-\-help\-gtk                   Print GTK+ options
+  \-\-version                    Print version number
+
+Application options:
+  \-v, \-\-verbose                Prints a lot of debug information
+  \-d, \-\-device=VIDEO_DEVICE    Video Device [default: /dev/video0]
+  \-a, \-\-add_ctrls              Exits after adding dynamic controls to the uvc driver (needs root/sudo)
+  \-o, \-\-control_only           Don't stream video (image controls only)
+  \-r, \-\-capture_method=[1|2]   Capture method (1-mmap (default) 2-read)
+  \-g, \-\-config=FILENAME        Configuration File
+  \-w, \-\-hwd_acel=[1|0]         Hardware accelaration:
+                                          (enable(1) | disable(0))
+  \-f, \-\-format=FORMAT          Video input format:
+     mjpg | jpeg | yuyv | yvyu | uyvy | yyuv | yu12 | yv12 | nv12 |
+     nv21 | nv16 | nv61 | y11p | grey | s501 | s505 | s508 | gbrg |
+     grbg | ba81 | rggb | bgr3 | rgb3 |
+  \-s, \-\-size=WIDTHxHEIGHT      Resolution, default: 640x480
+  \-i, \-\-image=FILENAME         Image File
+  \-c, \-\-cap_time=TIME          Time elapsed between image captures
+  \-m, \-\-npics=NUMPIC           Number of images to capture
+  \-n, \-\-video=FILENAME         Video File (capture from start)
+  \-t, \-\-vid_time=TIME          Video duration (in seconds)
+  \-\-exit_on_close              Exits guvcview after closing video
+  \-j, \-\-skip=N_FRAMES          Number of inital frames to skip
+  \-p, \-\-show_fps=[1|0]         Print FPS on video Window:
+                                          (enable(1) | disable(0))
+  \-l, \-\-profile=FILENAME       Load profile
+
+
+.SH AUTHOR
+This manual page was written by Paulo Assis <pj.assis@gmail.com>,
+for the Debian GNU/Linux system (but may be used by others).
