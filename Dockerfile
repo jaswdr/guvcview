@@ -4,8 +4,7 @@ MAINTAINER jonathan.schweder@bludata.com.br
 
 RUN apt-get update -y \
     && apt-get upgrade -y \
-    && apt-get install -y \
-    git \
+    && apt-get install \
     build-essential \
     cmake \
     pkg-config \
@@ -22,7 +21,10 @@ RUN apt-get update -y \
     libusb-1.0-0-dev \
     libpulse-dev \
     libgsl0-dev \
-    libtool
+    libtool \
+    --no-install-recommends \
+    --no-install-suggests \
+    -y
 
 COPY . /usr/src/guvcview
 
