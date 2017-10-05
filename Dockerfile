@@ -1,4 +1,4 @@
-FROM jaschweder/php:server
+FROM ubuntu
 
 MAINTAINER jonathan.schweder@bludata.com.br
 
