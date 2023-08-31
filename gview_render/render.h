@@ -62,12 +62,13 @@ void render_osd_crosshair(uint8_t *frame, int width, int height);
  *    width - frame width
  *    height - frame height
  *    mask  - or'ed filter mask
+ *    fish - fish eye distortion
  *
  * asserts:
  *    frame is not null
  *
  * returns: void
  */
-void render_fx_apply(uint8_t *frame, int width, int height, uint32_t mask);
+void render_fx_apply(uint8_t *frame, int width, int height, uint32_t mask, uint32_t fish);
 
 #endif

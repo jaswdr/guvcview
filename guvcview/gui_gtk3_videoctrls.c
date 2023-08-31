@@ -509,6 +509,33 @@ int gui_attach_gtk3_videoctrls(GtkWidget *parent)
 	g_signal_connect (GTK_CHECK_BUTTON(FiltBlurEnable), "toggled",
 		G_CALLBACK (render_fx_filter_changed), NULL);
 
+    /* Fish*/
+    GtkWidget *FiltFishEnable = gtk_check_button_new_with_label (_(" FishEye"));
+    g_object_set_data (G_OBJECT (FiltFishEnable), "filt_info", GINT_TO_POINTER(REND_FX_YUV_FISHEYE));
+    gtk_widget_set_halign (FiltFishEnable, GTK_ALIGN_FILL);
+    gtk_widget_set_hexpand (FiltFishEnable, TRUE);
+    gtk_grid_attach(GTK_GRID(table_filt), FiltFishEnable, 0, 3, 1, 1);
+
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(FiltFishEnable),
+                                 (get_render_fx_mask() &  REND_FX_YUV_FISHEYE)> 0);
+    gtk_widget_show (FiltFishEnable);
+    g_signal_connect (GTK_CHECK_BUTTON(FiltFishEnable), "toggled",
+                      G_CALLBACK (render_fx_filter_changed), NULL);
+
+    /* Add slider control for Fish */
+    GtkWidget *FiltFishSlider = gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
+    gtk_widget_set_halign (FiltFishSlider, GTK_ALIGN_FILL);
+    gtk_widget_set_hexpand (FiltFishSlider, TRUE);
+    gtk_grid_attach(GTK_GRID(table_filt), FiltFishSlider, 1, 3, 1, 1);
+    gtk_widget_show (FiltFishSlider);
+    gtk_range_set_value(GTK_RANGE(FiltFishSlider), get_render_fx_fish());
+    // send the value to the callback
+    g_signal_connect (GTK_RANGE(FiltFishSlider), "value-changed",
+                      G_CALLBACK (render_fx_fish_changed), NULL);
+    // Only enable of FiltFishEnable is toggled on.
+    gtk_widget_set_sensitive (FiltFishSlider,
+                              (get_render_fx_mask() & REND_FX_YUV_FISHEYE) > 0);
+    g_object_set_data (G_OBJECT (FiltFishEnable), "slider", FiltFishSlider);
         /* Blur 2 */
 	GtkWidget *FiltBlur2Enable = gtk_check_button_new_with_label (_(" Blur more"));
 	g_object_set_data (G_OBJECT (FiltBlur2Enable), "filt_info", GINT_TO_POINTER(REND_FX_YUV_BLUR2));

@@ -317,12 +317,12 @@ int render_init(int render, int width, int height, int flags)
  *
  * returns: void
  */
-void render_frame_fx(uint8_t *frame, uint32_t mask)
+void render_frame_fx(uint8_t *frame, uint32_t mask, uint32_t fish_eye_distortion)
 {
 	/*asserts*/
 	assert(frame != NULL);
 
-	render_fx_apply(frame, my_width, my_height, mask);
+	render_fx_apply(frame, my_width, my_height, mask, fish_eye_distortion);
 }
 
 /*

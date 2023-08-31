@@ -51,6 +51,7 @@ uint8_t *tmpbuffer = NULL;
 uint32_t *TB_Sqrt_ind = NULL; //look up table for sqrt lens distort indexes
 uint32_t *TB_Pow_ind = NULL; //look up table for pow lens distort indexes
 uint32_t *TB_Pow2_ind = NULL; //look up table for pow2 lens distort indexes
+uint32_t *TB_Fish_ind = NULL; //look up table for Fish lens distort indexes
 
 typedef struct _particle_t
 {
@@ -1251,6 +1252,240 @@ void fx_yu12_distort(uint8_t* frame, int width, int height, int box_width, int b
 
 }
 
+/**
+ * Compute the LUTs for the fisheye effect.
+ * @param height  Height of the box
+ * @param width Width of the box
+ * @param distortion_factor_input The distortion factor
+ * @param ret_x Return lookup table for x.
+ * @param ret_y Return lookup table for y.
+ * @param workspace Workspace for the computation. 2*width*height uint32_t
+ */
+static void fisheye_index(int height, int width, double distortion_factor_input, uint32_t *ret_x, uint32_t *ret_y,
+                          uint32_t *workspace) {
+	// Get the center of the image
+	double center_x = width / 2.0;
+	double center_y = height / 2.0;
+
+	// Set the radius of the image
+	double radius = fmin(center_x, center_y);
+
+	// Set the distortion factor
+	double k = distortion_factor_input;
+
+	// Create an empty table
+	uint32_t *distorted_x = workspace;
+	uint32_t *distorted_y = distorted_x + height * width;
+
+	// Bounding box of the distorted image without the black border created by the barrel distortion
+	int x_min = width;
+	int x_max = 0;
+	int y_min = height;
+	int y_max = 0;
+
+
+	for (int y = 0; y < height; ++y) {
+		for (int x = 0; x < width; ++x) {
+			// Get the distance of the pixel from the center of the image
+			double distance_from_center = sqrt(pow(x - center_x, 2) + pow(y - center_y, 2));
+
+			// Compute the distortion factor
+			double distortion_factor = 1.0 - k * (pow(radius, 2) - pow(distance_from_center, 2)) / pow(radius, 2);
+
+			// Compute the angle of the pixel from the center of the image
+			double angle = fast_atan2(y - center_y, x - center_x);
+
+			// Compute the distance of the pixel from the center of the image
+			double distance_from_center_new = distance_from_center * distortion_factor;
+
+			// Compute the coordinates of the pixel in the distorted image
+			double x_distorted = distance_from_center_new * fast_cos(angle) + center_x;
+			double y_distorted = distance_from_center_new * fast_sin(angle) + center_y;
+
+			if (x_distorted < 0 || x_distorted >= width || y_distorted < 0 || y_distorted >= height) {
+				continue;
+			}
+
+			int x_distorted_int = (int) x_distorted;
+			int y_distorted_int = (int) y_distorted;
+
+			// Find the bounding box that doesn't have the barrel distortion
+			if (x_distorted_int == 0) {
+				y_max = (y > y_max) ? y : y_max;
+			}
+			if (x_distorted_int == width - 1) {
+				y_min = (y < y_min) ? y : y_min;
+			}
+			if (y_distorted_int == 0) {
+				x_max = (x > x_max) ? x : x_max;
+			}
+			if (y_distorted_int == height - 1) {
+				x_min = (x < x_min) ? x : x_min;
+			}
+
+			int x_distorted_prime = (x_distorted_int + 1 < width) ? x_distorted_int + 1 : width - 1;
+			int y_distorted_prime = (y_distorted_int + 1 < height) ? y_distorted_int + 1 : height - 1;
+
+			double dist_x = x_distorted - x_distorted_int;
+			double dist_y = y_distorted - y_distorted_int;
+
+
+			// Bilinear interpolation
+			distorted_x[y * width + x] = (1 - dist_x) * (1 - dist_y) * x_distorted_int +
+			                             (1 - dist_x) * dist_y * x_distorted_int +
+			                             dist_x * (1 - dist_y) * x_distorted_prime +
+			                             dist_x * dist_y * x_distorted_prime;
+			distorted_y[y * width + x] = (1 - dist_x) * (1 - dist_y) * y_distorted_int +
+			                             (1 - dist_x) * dist_y * y_distorted_int +
+			                             dist_x * (1 - dist_y) * y_distorted_prime +
+			                             dist_x * dist_y * y_distorted_prime;
+		}
+	}
+
+	// Zoom in slightly to remove the black border introduced by the barrel distortion
+	int ret_x_min = x_min;
+	int ret_x_max = x_max;
+	int ret_y_min = y_min;
+	int ret_y_max = y_max;
+	for (int y = 0; y < height; ++y) {
+		int new_y = ret_y_min + (ret_y_max - ret_y_min) * y / ((double) height);
+		double dist_y = ret_y_min + (ret_y_max - ret_y_min) * y / ((double) height) - new_y;
+		int new_y_prime = fminf(new_y + 1, ret_y_max);
+		for (int x = 0; x < width; ++x) {
+			int new_x = ret_x_min + (ret_x_max - ret_x_min) * x / ((double) width);
+			double dist_x = ret_x_min + (ret_x_max - ret_x_min) * x / ((double) width) - new_x;
+			int new_x_prime = fminf(new_x + 1, ret_x_max);
+
+			// Perform bilinear interpolation to get both ret_x, and ret_Y
+			ret_x[y * width + x] = (1 - dist_x) * (1 - dist_y) * distorted_x[new_y * width + new_x] +
+			                       (1 - dist_x) * dist_y * distorted_x[new_y_prime * width + new_x] +
+			                       dist_x * (1 - dist_y) * distorted_x[new_y * width + new_x_prime] +
+			                       dist_x * dist_y * distorted_x[new_y_prime * width + new_x_prime];
+			ret_y[y * width + x] = (1 - dist_x) * (1 - dist_y) * distorted_y[new_y * width + new_x] +
+			                       (1 - dist_x) * dist_y * distorted_y[new_y_prime * width + new_x] +
+			                       dist_x * (1 - dist_y) * distorted_y[new_y * width + new_x_prime] +
+			                       dist_x * dist_y * distorted_y[new_y_prime * width + new_x_prime];
+
+		}
+	}
+
+	// In case of illegal bounds just use the undeformed image
+	for (int y = 0; y < height; ++y) {
+		for (int x = 0; x < width; ++x) {
+			uint32_t temp_x = ret_x[y * width + x];
+			uint32_t temp_y = ret_y[y * width + x];
+			if (temp_x >= width || temp_y >= height) {
+				ret_x[y * width + x] = x;
+				ret_y[y * width + x] = y;
+			}
+		}
+	}
+}
+
+
+/*
+ * distort (fish effect)
+ * args:
+ *    frame  - pointer to frame buffer (yu12 format)
+ *    width  - frame width
+ *    height - frame height
+ *    distortion - distortion factor
+ *
+ * asserts:
+ *    frame is not null
+ *
+ * returns: void
+ */
+void fx_yu12_fish(uint8_t *frame, int width, int height, double distortion) {
+	assert(frame != NULL);
+	size_t table_size = width * height * 3 / 2;
+
+	if (!tmpbuffer)
+		tmpbuffer = malloc(table_size);
+
+	memcpy(tmpbuffer, frame, table_size);
+	uint8_t *pu = frame + (width * height);
+	uint8_t *pv = pu + (width * height) / 4;
+	uint8_t *tpu = tmpbuffer + (width * height);
+	uint8_t *tpv = tpu + (width * height) / 4;
+
+	//index table
+	uint32_t *tb_pu_x = NULL;
+	uint32_t *tb_pu_y = NULL;
+
+	uint32_t *y_table = NULL;
+	uint32_t *x_table = NULL;
+
+
+	int j;
+	int i;
+	uint32_t ind;
+
+	int start_x = 0;
+	int start_y = 0;
+
+	int box_width = width;
+	int box_height = height;
+
+	static double last_distortion = 0.0;
+
+
+	// Compute new LUT either if the distortion changed or if the LUT is not yet computed
+	if (TB_Fish_ind == NULL || fabs(distortion - last_distortion) > 1e-6) //fill lookup table
+	{
+		if (TB_Fish_ind != NULL)
+			free(TB_Fish_ind);
+
+		// Two tables. One for y and one for x
+		TB_Fish_ind = calloc(2 * table_size, sizeof(uint32_t));
+
+		y_table = TB_Fish_ind;
+		x_table = y_table + table_size;
+		tb_pu_y = y_table + (width * height);
+		tb_pu_x = x_table + (width * height);
+
+		uint32_t *workspace = (uint32_t *) malloc(2 * width * height * sizeof(uint32_t));
+		fisheye_index(height, width, distortion, y_table, x_table, workspace);
+		fisheye_index(height / 2, width / 2, distortion, tb_pu_y, tb_pu_x, workspace);
+		free(workspace);
+		last_distortion = distortion;
+	}
+
+	y_table = TB_Fish_ind;
+	x_table = y_table + table_size;
+	tb_pu_y = y_table + (width * height);
+	tb_pu_x = x_table + (width * height);
+
+
+	//apply the distortion
+	//(luma)
+	for (j = 0; j < box_height; j++) {
+		for (i = 0; i < box_width; i++) {
+			int bi = i + start_x;
+			int bj = j + start_y;
+
+			ind = bi + (bj * box_width);
+
+			int ni = y_table[ind];
+			int nj = x_table[ind];
+
+			frame[ind] = tmpbuffer[ni + (nj * width)];
+		}
+	}
+
+	for (j = 0; j < box_height / 2; j++) {
+		for (i = 0; i < box_width / 2; i++) {
+			int bi = i + start_x / 2;
+			int bj = j + start_y / 2;
+
+			ind = bi + (bj * box_width / 2);
+			int ni = tb_pu_y[ind];
+			int nj = tb_pu_x[ind];
+			pu[ind] = tpu[ni + (nj * width / 2)];
+			pv[ind] = tpv[ni + (nj * width / 2)];
+		}
+	}
+}
 /*
  * Apply fx filters
  * args:
@@ -1304,7 +1539,12 @@ void render_fx_apply(uint8_t *frame, int width, int height, uint32_t mask)
         if(mask & REND_FX_YUV_POW2_DISTORT)
 			fx_yu12_distort(frame, width, height, 0, 0, REND_FX_YUV_POW2_DISTORT);
 
-		if(mask & REND_FX_YUV_BLUR)
+		// Scale 0-100 to 0.0-0.7 Beyond that the distortion is too high
+		double distortion = fish_distortion / 100.0 * 0.7;
+		if (mask & REND_FX_YUV_FISHEYE)
+			fx_yu12_fish(frame, width, height, distortion);
+
+		if (mask & REND_FX_YUV_BLUR)
 			fx_yu12_gauss_blur(frame, width, height, 2, 0);
 
 		if(mask & REND_FX_YUV_BLUR2)
@@ -1374,5 +1614,11 @@ void render_clean_fx()
 	{
 		free(TB_Pow2_ind);
 		TB_Pow2_ind = NULL;
+	}
+
+
+	if (TB_Fish_ind != NULL) {
+		free(TB_Fish_ind);
+		TB_Fish_ind = NULL;
 	}
 }

@@ -67,6 +67,7 @@ static int restart = 0; /*restart flag*/
 static char render_caption[30]; /*render window caption*/
 
 static uint32_t my_render_mask = REND_FX_YUV_NOFILT; /*render fx filter mask*/
+static uint32_t my_render_fish = 50; /*render fx fish mask*/
 
 static uint32_t my_audio_mask = AUDIO_FX_NONE; /*audio fx filter mask*/
 
@@ -118,6 +119,21 @@ uint32_t get_render_fx_mask()
 }
 
 /*
+ * get render fx fish param
+ * args:
+ *    none
+ *
+ * asserts:
+ *    none
+ *
+ * returns: render fx mask
+ */
+uint32_t get_render_fx_fish()
+{
+    return 50;
+}
+
+/*
  * set render fx mask
  * args:
  *    new_mask - fx mask value
@@ -135,6 +151,9 @@ void set_render_fx_mask(uint32_t new_mask)
 	my_config->video_fx = my_render_mask;
 }
 
+void set_render_fx_fish(uint32_t value) {
+    my_render_fish = value;
+}
 /*
  * get audio fx mask
  * args:

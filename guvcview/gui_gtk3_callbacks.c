@@ -1403,15 +1403,44 @@ void format_changed(GtkComboBox *wgtInpType, void *data)
  *
  * returns: none
  */
-void render_fx_filter_changed(GtkToggleButton *toggle, void *data)
-{
-	int filter = GPOINTER_TO_INT(g_object_get_data (G_OBJECT (toggle), "filt_info"));
+void render_fx_filter_changed(GtkToggleButton *toggle, void *data) {
+    static GtkWidget *slider_widgets[32];
+    int filter = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(toggle), "filt_info"));
+    GtkWidget *slider = GTK_WIDGET(g_object_get_data(G_OBJECT(toggle), "slider"));
 
-	uint32_t mask = gtk_toggle_button_get_active (toggle) ?
-			get_render_fx_mask() | filter :
-			get_render_fx_mask() & ~filter;
+    uint32_t mask = gtk_toggle_button_get_active(toggle) ?
+                    get_render_fx_mask() | filter :
+                    get_render_fx_mask() & ~filter;
 
-	set_render_fx_mask(mask);
+    // set the slider for this filter if it's provided. index by bit.
+    uint8_t  slider_index = ffs(filter) - 1;
+    assert(slider_index < 32);
+    slider_widgets[slider_index] = slider;
+
+    // For each bit in the mask
+    for (uint8_t idx_bit = 0; idx_bit < 32; ++idx_bit) {
+        if (slider_widgets[idx_bit] == NULL)
+            continue;
+        gtk_widget_set_sensitive(slider_widgets[idx_bit], (mask & (1 << idx_bit)) ? TRUE : FALSE);
+    }
+
+    set_render_fx_mask(mask);
+}
+
+/*
+ * render fx filter changed event
+ * args:
+ *    slider - widget that generated the event
+ *    data - pointer to user data
+ *
+ * asserts:
+ *    none
+ *
+ * returns: none
+ */
+void render_fx_fish_changed(GtkScale *slider, void *data) {
+    gdouble value = gtk_range_get_value(GTK_RANGE(slider));
+    set_render_fx_fish(value);
 }
 
 /*

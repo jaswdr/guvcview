@@ -84,6 +84,7 @@ private slots:
     void resolution_changed (int index);
     void format_changed(int index);
     void render_fx_filter_changed(int state);
+    void render_fx_fish_changed(int state);
     void render_osd_changed(int state);
 	/*h264*/
 	void h264_rate_control_mode_changed(int index);

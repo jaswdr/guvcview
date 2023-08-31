@@ -59,6 +59,29 @@ void set_render_flag(int value);
 uint32_t get_render_fx_mask();
 
 /*
+ * get render fish eye fx mask
+ * args:
+ *    none
+ *
+ * asserts:
+ *    none
+ *
+ * returns: render fx mask
+ */
+uint32_t get_render_fx_fish();
+
+/*
+ * get render fish eye fx mask
+ * args:
+ *    new value - new render fx filter fish
+ *
+ * asserts:
+ *    none
+ *
+ */
+void set_render_fx_fish(uint32_t);
+
+/*
  * set render fx mask
  * args:
  *    new_mask - new render fx filter mask

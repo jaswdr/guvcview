@@ -68,6 +68,7 @@ __BEGIN_DECLS
 #define REND_FX_YUV_POW2_DISTORT (1<<10)
 #define REND_FX_YUV_BLUR (1<<11)
 #define REND_FX_YUV_BLUR2 (1<<12)
+#define REND_FX_YUV_FISHEYE (1<<13)
 
 /*OSD FLAGS*/
 #define REND_OSD_NONE           (0)
