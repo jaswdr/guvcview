@@ -260,7 +260,7 @@ int render_call_event_callback(int id);
  *
  * returns: void
  */
-void render_frame_fx(uint8_t *frame, uint32_t mask);
+void render_frame_fx(uint8_t *frame, uint32_t mask, uint32_t fish_eye_distortion);
 
 /*
  * Apply OSD mask

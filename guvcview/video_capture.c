@@ -1161,7 +1161,7 @@ void *capture_loop(void *data)
 			 * do it before saving the frame
 			 * (we want to store the effects)
 			 */
-			render_frame_fx(frame->yuv_frame, my_render_mask);
+			render_frame_fx(frame->yuv_frame, my_render_mask, my_render_fish);
 
 			/*check the timers*/
 			if(check_photo_timer())

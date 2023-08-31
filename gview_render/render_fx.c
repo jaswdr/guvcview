@@ -1499,7 +1499,7 @@ void fx_yu12_fish(uint8_t *frame, int width, int height, double distortion) {
  *
  * returns: void
  */
-void render_fx_apply(uint8_t *frame, int width, int height, uint32_t mask)
+void render_fx_apply(uint8_t *frame, int width, int height, uint32_t mask, uint32_t fish_distortion)
 {
 	if(mask != REND_FX_YUV_NOFILT)
     {
