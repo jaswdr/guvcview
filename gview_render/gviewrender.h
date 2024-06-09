@@ -38,7 +38,9 @@
 #include <sys/types.h>
 
 /*make sure we support c++*/
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define RENDER_NONE     (0)
 #define RENDER_SDL      (1)
@@ -321,6 +323,8 @@ void render_clean_fx();
  */
 void render_close();
 
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif
