@@ -38,7 +38,10 @@
 #include <sys/types.h>
 
 /*make sure we support c++*/
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 
 /*encoder modes*/
 #define ENCODER_MODE_NONE   (0)
@@ -717,6 +720,8 @@ int encoder_write_audio_data(encoder_context_t *encoder_ctx);
  */
 int encoder_disk_supervisor(int treshold, const char *path);
 
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif

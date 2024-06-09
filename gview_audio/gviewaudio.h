@@ -39,7 +39,9 @@
 #include <pthread.h>
 
 /*make sure we support c++*/
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*Audio API*/
 #define AUDIO_NONE          (0)
@@ -375,6 +377,8 @@ int audio_stop(audio_context_t *audio_ctx);
  */
 void audio_close(audio_context_t *audio_ctx);
 
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif
