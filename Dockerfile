@@ -1,6 +1,6 @@
 FROM ubuntu
 
-MAINTAINER jonathan.schweder@bludata.com.br
+MAINTAINER jonathan.schweder@gmail.com
 
 RUN apt-get update -y \
     && apt-get upgrade -y \
