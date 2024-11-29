@@ -33,7 +33,9 @@
 #include <sys/types.h>
 
 /*make sure we support c++*/
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
  * LOGITECH Dynamic controls defs
@@ -1423,7 +1425,9 @@ int v4l2core_save_image(
  */
 uint64_t v4l2core_time_get_timestamp();
 
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 
